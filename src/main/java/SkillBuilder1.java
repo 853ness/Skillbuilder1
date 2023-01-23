@@ -11,6 +11,14 @@ public class SkillBuilder1 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         //TODO : Replace this comment with your code
+        System.out.println("You're Jane's friend!");
+        System.out.println("What's your name?");
+        String ans = input.nextLine();
+        System.out.println("Enter a floating-point number:");
+        double spice = input.nextDouble();
+        double ans3 = (4/3) * Math.pow(2, Math.sqrt(5)/Math.pow(spice,3));
+        System.out.println("Well " + ans + ", the spice value resulted in " + ans3);
+        System.out.printf("And the converted value %.2f",ans3);
 
     }
     public static void calcWallPaint() {
@@ -20,6 +28,7 @@ public class SkillBuilder1 {
         double wallArea;
         double gallonsPaintNeeded;
         int cansNeeded;
+
 
         final double squareFeetPerGallons = 350.0;
         final double gallonsPerCan = 1.0;
